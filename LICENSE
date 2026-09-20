@@ -1,0 +1,43 @@
+MIT License
+
+Copyright (c) 2024 SHI Yanrong (史晏榕) — Faculty of Psychology, Southwest University
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---------------------------------------------------------------------------
+SCOPE NOTE / 适用范围说明
+
+This license covers the SOURCE CODE of this repository only.
+本许可证仅覆盖本仓库的源代码。
+
+1. The upstream Qt Flappy Bird teaching project (QtFlappyBird-master) and its
+   original game assets remain the property of their respective authors.
+   上游 Qt Flappy Bird 教学项目（QtFlappyBird-master）及其原始游戏素材的著作权
+   归其各自作者所有。
+
+2. Images/, sounds/ and other media assets are included for research
+   reproducibility. The loot-box artwork and experiment UI were created for
+   this study.
+   Images/、sounds/ 等媒体素材为研究复现目的而包含；抽卡图片与实验界面为本研究制作。
+
+3. The thesis text and the questionnaire items (e.g. the Internet Gaming
+   Disorder scale and the loot-box game motivation questionnaire) are NOT
+   covered by this license. Please contact the author for reuse.
+   论文正文与问卷题目（如网络游戏成瘾量表、loot box 游戏动机问卷）不在本许可证
+   覆盖范围内，如需使用请联系论文作者。

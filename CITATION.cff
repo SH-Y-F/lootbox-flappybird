@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+message: "If you use these experiment programs in academic work, please cite the thesis below and this repository."
+title: "Loot Box 抽卡行为实验程序集 (Loot Box Experiment Programs: Flappy Bird + gacha task)"
+abstract: >-
+  Four Qt 5 (C++) implementations of a Flappy Bird + loot-box card-drawing behavioural task.
+  Study 1 manipulates whether the draw reward is fixed or random (curiosity motivation);
+  Study 2 manipulates the value of the rare reward (CNY 0.5 vs CNY 3; wanting motivation).
+  Each program logs draw count, pipe score and (when extended) play duration to a text file.
+type: software
+license: MIT
+license-url: "https://opensource.org/licenses/MIT"
+repository-code: "https://github.com/<your-account>/lootbox-flappybird"
+keywords:
+  - loot box
+  - gacha
+  - game motivation
+  - curiosity
+  - wanting
+  - Flappy Bird
+  - Qt
+  - behavioural experiment
+  - 抽卡
+  - 游戏动机
+authors:
+  - family-names: "史晏榕"
+    given-names: "Yanrong"
+    name-particle: ""
+    alias: "SHI Yanrong"
+    affiliation: "Faculty of Psychology, Southwest University, Chongqing, PR China"
+    # email: "your.email@example.com"   # 如愿意公开联系方式，请取消注释并填写
+version: 1.0.0
+date-released: "2024-06-01"
+
+preferred-citation:
+  type: thesis
+  title: "Loot Box 游戏中游戏动机对游戏行为的影响"
+  authors:
+    - family-names: "史晏榕"
+      given-names: "Yanrong"
+      alias: "SHI Yanrong"
+      affiliation: "Faculty of Psychology, Southwest University, Chongqing, PR China"
+  school: "西南大学 (Southwest University)"
+  department: "心理学部 (Faculty of Psychology)"
+  year: 2024
+  month: 4
+  notes: "本科毕业论文 (Undergraduate thesis); 指导教师 / advisor: 邹枝玲 (ZOU Zhiling)"
