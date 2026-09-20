@@ -90,6 +90,6 @@ out << "TOTALSCORE:" << data1
 
 | 文件 File | 作用 Role | 提交到仓库？ In repo? |
 |---|---|---|
-| `testee.txt` | 行为数据输出（被试结束后追加） | ✅ 空文件占位 |
-| `output.txt` | 预留输出文件（当前为空） | ✅ 空文件占位 |
+| `testee.txt` | 行为数据输出（被试结束后追加） | ✅ 空文件 |
+| `output.txt` | 预留输出文件（当前为空） | ✅ 空文件 |
 | `ui_*.h`、`moc_*.cpp`、`qrc_*.cpp`、`Makefile*`、`*.o` | 构建生成物 | ❌ 已在 `.gitignore` 中忽略 |

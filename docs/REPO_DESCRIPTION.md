@@ -112,8 +112,8 @@ v1.0.0 — 四个实验条件的完整源码 / Full source of the four condition
 **环境**：Qt 5.12+（原始实验使用 Qt 5.15.2 / MinGW 8.1 32-bit / Windows）
 
 **注意**
-- `E2-High-Value-Rare/shuoming.ui` 为依据该组编译产物逐字重建的文件，详见 `docs/EXPERIMENT_MAPPING.md`
-- 仓库不含被试数据；`testee.txt` 均为空占位文件
+- `E2-High-Value-Rare/shuoming.ui` 还原自该组编译产物中的 `ui_shuoming.h`，详见 `docs/EXPERIMENT_MAPPING.md`
+- 仓库不含被试数据；各工程内的 `testee.txt` 均为空文件
 
 **First public release** — complete sources of the four Qt programs used in the study
 (no build artifacts). Bilingual documentation included.

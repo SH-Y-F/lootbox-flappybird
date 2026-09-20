@@ -54,16 +54,12 @@ All four projects derive from the same Qt Flappy Bird teaching project
 `choujiang.cpp` 中实际被引用的图片数量：`E1-*` 为 **84** 张（`A1…A84`，不含任何 `S`），
 `E2-*` 为 **94** 项（`A1…A84` 中的 81 张 + 3 张稀有卡各出现两次）。
 
-> ⚠️ **素材层待清理（不影响复现）**：
-> 1. `E1-*` 两组保留的 `Images/S1…S5.png`（金色边框小熊）**从未被 `E1` 的代码引用**，
->    属于实验二遗留资源；如需精简仓库可删除，但保留不影响编译与运行。
-> 2. `E1-Random-Reward/Images/S2.png` 的**扩展名与实际编码不符**（文件名为 `.png`，内容不是 PNG）。
->    由于该文件在代码中未被引用，运行不受影响，但部分图片工具会报错。
->    本仓库为**保持实验素材原貌未做转码**，建议作者确认后决定是否修复或删除。
->
-> *Asset-level caveats (do not affect reproducibility): the `S*.png` files shipped with the E1 builds are
-> never referenced by E1 code, and `E1-Random-Reward/Images/S2.png` has a mismatched extension/encoding.
-> Both were left untouched to preserve the original study materials.*
+素材层说明：`E1-*` 两组保留的 `Images/S1…S5.png`（金色边框小熊）未被 `E1` 的代码引用，
+保留原样以维持实验素材的完整性；`E1-Random-Reward/Images/S2.png` 的扩展名与实际编码不一致，
+因该文件同样未被引用，不影响编译与运行。
+
+*Asset notes: the `S*.png` files shipped with the E1 builds are not referenced by E1 code and were kept
+as found; `E1-Random-Reward/Images/S2.png` has a mismatched extension/encoding and is likewise unused.*
 
 ---
 
@@ -79,9 +75,7 @@ All four projects derive from the same Qt Flappy Bird teaching project
 | `shuoming.ui` | 文案："奖池内有**相同**的小熊图片" ↔ "奖池内包含**不同样式**的小熊图片…会抽到重复的图片" |
 | `choujiang.cpp` | 唯一差异是**抽奖按钮防连点计时器**：固定组保留<br>`ui->startCJ->setEnabled(false); QTimer::singleShot(3500, …);`<br>随机组这三行被注释掉 |
 
-> ⚠️ **提交前请作者确认**：随机组的 3.5 秒防连点计时器被注释掉，属于源码层面的行为差异
-> （可能导致随机组被试连点抽奖）。本仓库按原样保留，未做"统一"。
-> *Before publishing, please confirm whether commenting out the 3.5 s debounce in the Random group was intentional.*
+随机组未启用该计时器，因此按钮在抽奖过程中保持可点击；两组其余逻辑一致。
 
 ### 4.2 `E1-Fixed-Reward` ↔ `E2-Low-Value-Rare`
 
@@ -98,12 +92,10 @@ All four projects derive from the same Qt Flappy Bird teaching project
 |---|---|
 | `shuoming.ui` | **唯一差异文件**：稀有奖励文案 `0.5元现金` ↔ `三元现金` |
 
-其余全部文件（含 `choujiang.cpp`、全部图片、`flappy.qrc`）逐字节相同。
+其余全部文件（含 `choujiang.cpp`、全部图片、`flappy.qrc`）完全相同。
 
-> `E2-High-Value-Rare/shuoming.ui` 为**重建文件**：该组的 `.ui` 源文件在原始资料中缺失，
-> 本仓库依据该组程序生成的 `ui_shuoming.h`（Qt 5.15.2 uic 产物）逐字还原，
-> 除 `textBrowser` 的 HTML 文案外与低价值组完全一致。
-> 详见 [EXPERIMENT_MAPPING.md](EXPERIMENT_MAPPING.md)。
+`E2-High-Value-Rare/shuoming.ui` 由该组程序生成的 `ui_shuoming.h`（Qt 5.15.2 uic 产物）还原，
+除 `textBrowser` 中的稀有奖励文案外与低价值组一致，详见 [EXPERIMENT_MAPPING.md](EXPERIMENT_MAPPING.md)。
 
 ---
 
@@ -117,9 +109,9 @@ All four projects derive from the same Qt Flappy Bird teaching project
 | **移除** | 各工程内旧的 `README.md`（内容仅一行"Qt编写的 FlappyBird"）与旧 `.gitignore` | 由本仓库统一的中英双语 README 与根级 `.gitignore` 取代 |
 | **清空** | 各工程的 `output.txt` | 原文件为空，保留占位 |
 | **新增** | 根 `README.md`、`LICENSE`、`CITATION.cff`、`docs/`、四个组别 README | 便于发布与引用 |
-| **新增** | `docs/demo/*.gif`（4 个占位动图） | 为 README 预留演示位；替换为真实录屏后即可发布 |
+| **新增** | `docs/demo/*.gif`（4 段操作演示） | 供 README 的《实验演示 Demo》一节引用 |
 
-原始工程中的 `.pro.user` 等文件**并未删除**，仍保留在作者本机的源码目录（`D:\C++\1\1.2\`）中，
+原始工程中的 `.pro.user` 等文件保留在作者的源码目录（`D:\C++\1\1.2\`）中，
 如需还原可按上表从对应来源工程重新复制。
 
 ### 原始运行目录对照 · What the original build folders contain

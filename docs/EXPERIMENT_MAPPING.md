@@ -96,14 +96,14 @@ DIFF: shuoming.ui      （唯一差异文件 / the only differing file）
 
 ---
 
-## 3. 需要注意的复现事项 · Reproducibility caveats
+## 3. 复现说明 · Reproducibility notes
 
-1. **`E2-High-Value-Rare/shuoming.ui` 是重建文件。** 高价值组的 `.ui` 源文件在原始资料中缺失，
-   本仓库依据该组程序运行时生成的 `ui_shuoming.h`（Qt 5.15.2 uic 产物）**逐字还原**，
-   且除 `textBrowser` 的 HTML 文案外与低价值组保持完全一致。该文件可以用 Qt Designer 正常打开与编辑。
-   *The High-Value `.ui` was lost and has been reconstructed verbatim from that build's generated `ui_shuoming.h`;
-   apart from the `textBrowser` HTML it is byte-identical to the Low-Value file.*
-2. **`E1-Fixed-Reward` 的 84 张图片是同一文件的副本**，仓库中如实保留（约 4.8 MB）。
-   若你只想复现逻辑，可以把 `Images/A*.png` 换成单一图片并缩短 `imageList`。
-3. 三个来源工程在原始目录中分别为 `QtFlappyBird-master - 2.1__1`、`2.1__2`、`2.1__34`
+1. **`E2-High-Value-Rare/shuoming.ui` 的来源。** 高价值组的 `.ui` 源文件在原始资料中缺失，
+   本仓库依据该组程序运行时生成的 `ui_shuoming.h`（Qt 5.15.2 uic 产物）还原，
+   除 `textBrowser` 的 HTML 文案外与低价值组保持一致，可用 Qt Designer 正常打开与编辑。
+   *The High-Value `.ui` was recovered from that build's generated `ui_shuoming.h`; apart from the
+   `textBrowser` HTML it matches the Low-Value file.*
+2. **`E1-Fixed-Reward` 的 84 张图片是同一文件的副本**，仓库中如实保留（约 4.8 MB）；
+   若只需要复现逻辑，可把 `Images/A*.png` 换成单一图片并相应缩短 `imageList`。
+3. 四个工程分别源自 `QtFlappyBird-master - 2.1__1`、`2.1__2`、`2.1__34`
    （见 [MODIFICATIONS.md](MODIFICATIONS.md)）。
