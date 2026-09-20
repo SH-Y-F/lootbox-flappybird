@@ -47,7 +47,7 @@
 - 抽卡后弹出 1–7 点评分框，测量被试对抽到结果的"想要"程度。
 
 论文题目：《Loot Box 游戏中游戏动机对游戏行为的影响》（作者：史晏榕，西南大学心理学部）。
-论文提出了两个实验：**实验一**操纵"抽奖奖励是否随机"（好奇动机），**实验二**操纵"稀有奖励的价值高低"（想要动机）。四个程序分别对应这四个实验条件。
+论文包含两个实验：**实验一**操纵"抽奖奖励是否随机"（好奇动机），**实验二**操纵"稀有奖励的价值高低"（想要动机）。四个程序分别对应这四个实验条件。
 
 ### 四个实验条件
 
@@ -58,12 +58,9 @@
 | [`E2-Low-Value-Rare`](E2-Low-Value-Rare/) | 实验二 · 稀有价值相对低组 | 实验二（N=62） | 稀有奖励价值**低** | 奖池 = 普通小熊 + 金色边框稀有卡；每抽到 1 张稀有卡额外奖励 **0.5 元** | 想要动机 / 低价值 |
 | [`E2-High-Value-Rare`](E2-High-Value-Rare/) | 实验二 · 稀有价值相对高组 | 实验二（N=62） | 稀有奖励价值**高** | 同上，但每抽到 1 张稀有卡额外奖励 **3 元** | 想要动机 / 高价值 |
 
-> 四个版本共用同一套 Flappy Bird 玩法与问卷框架，差异集中在抽奖系统的奖池构成与说明文案上，详见 [docs/EXPERIMENT_MAPPING.md](docs/EXPERIMENT_MAPPING.md) 与 [docs/MODIFICATIONS.md](docs/MODIFICATIONS.md)。
+四个版本共用同一套 Flappy Bird 玩法与问卷框架，差异集中在抽奖系统的奖池构成与说明文案上，详见 [docs/EXPERIMENT_MAPPING.md](docs/EXPERIMENT_MAPPING.md) 与 [docs/MODIFICATIONS.md](docs/MODIFICATIONS.md)。
 
 ### 实验演示 Demo
-
-> 📹 **以下四个位置是预留的 GIF 演示位，当前放的是自动生成的占位动图。**
-> 请按下面的《录制与替换说明》录好真实操作演示后，用**同名文件**覆盖即可，README 不需要再改。
 
 | 条件 Condition | 演示 Demo |
 |---|---|
@@ -71,40 +68,6 @@
 | 实验一 · 奖励随机组 | <img src="docs/demo/E1-Random-Reward.gif" alt="实验一 · 奖励随机组 演示" width="440"> |
 | 实验二 · 稀有价值相对低组（0.5 元） | <img src="docs/demo/E2-Low-Value-Rare.gif" alt="实验二 · 稀有价值相对低组 演示" width="440"> |
 | 实验二 · 稀有价值相对高组（3 元） | <img src="docs/demo/E2-High-Value-Rare.gif" alt="实验二 · 稀有价值相对高组 演示" width="440"> |
-
-**每段演示建议覆盖的内容（一组约 15–25 秒）**
-
-| 顺序 | 画面 | 建议时长 |
-|---|---|---|
-| 1 | 开始界面：输入被试编号 | 2 s |
-| 2 | 指导语页（说明"每通过 3 个管道获得一次抽奖机会"） | 3 s |
-| 3 | Flappy Bird 游戏：通过 3 个管道拿到 1 次抽奖机会 | 5 s |
-| 4 | 商店抽奖 + 开箱动画，**抽 2–3 次以体现本组特征** | 5–8 s |
-| 5 | 1–7 点"想要"评分框 | 2 s |
-| 6 | （可选）奖池说明页 / 结束实验的致谢提示 | 2 s |
-
-**四个条件各要"演"出什么**
-
-| 条件 | 演示重点 |
-|---|---|
-| 奖励固定组 | 连抽 3 次，**每次都是同一只小熊** |
-| 奖励随机组 | 连抽 3 次，**每次小熊样式都不同** |
-| 稀有价值相对低组 | 奖池说明页显示"可获得 **0.5元现金**"；最好能录到一次金色边框稀有卡 |
-| 稀有价值相对高组 | 同上，但文案为"可获得 **三元现金**" |
-
-**录制与替换说明**
-
-| 步骤 | 做法 |
-|---|---|
-| 1. 录屏 | 用 OBS Studio（免费、跨平台）、ShareX 或 QQ/微信截图工具的录屏功能，**按窗口录制** |
-| 2. 建议画面 | 商店页 `1040×649`；游戏页 `380×500`（窗口大小已由代码锁定）；建议整体录制区域不小于 `1040×649` |
-| 3. 转 GIF | OBS 可直接导出 GIF，或用 ScreenToGif / FFmpeg：<br>`ffmpeg -i demo.mp4 -vf "fps=15,scale=760:-1:flags=lanczos,split[a][b];[a]palettegen[p];[b][p]paletteuse" demo.gif` |
-| 4. 体积控制 | 目标 **3–8 MB / 段**：宽度 640–880 px、帧率 12–15 fps、时长 ≤ 25 s |
-| 5. 替换 | 用同名文件覆盖 `docs/demo/` 下的 4 个 gif（文件名区分大小写，请勿改名） |
-| 6. 确认 | 运行 `git status`，应只看到这 4 个 gif 被修改；提交后刷新 README 检查动图是否正常播放 |
-
-> 若某一段暂时没有录像，保持占位 GIF 即可 —— 占位图会明确显示 "REPLACE THIS FILE WITH YOUR RECORDING"，不会误导读者。
-> 录屏时请使用**虚构的编号与数据**，不要出现真实被试的姓名、编号或问卷内容。
 
 ### 目录结构
 
@@ -120,11 +83,7 @@ lootbox-flappybird/
 │   ├── MODIFICATIONS.md       # 相对上游 FlappyBird 的改动说明
 │   ├── REPO_DESCRIPTION.md    # 仓库 About 描述 / Topics / Release 文案
 │   ├── zh/QUICKSTART.md       # 主试操作指南（实验流程、数据收集、常见问题）
-│   └── demo/                  # 📹 README 里的四段 GIF 演示（当前为占位动图）
-│       ├── E1-Fixed-Reward.gif
-│       ├── E1-Random-Reward.gif
-│       ├── E2-Low-Value-Rare.gif
-│       └── E2-High-Value-Rare.gif
+│   └── demo/                  # README 中四段演示的 GIF 文件
 ├── E1-Fixed-Reward/           # 实验一 · 奖励固定组（完整 Qt 工程）
 ├── E1-Random-Reward/          # 实验一 · 奖励随机组（完整 Qt 工程）
 ├── E2-Low-Value-Rare/         # 实验二 · 稀有价值相对低组（完整 Qt 工程）
@@ -145,7 +104,8 @@ E1-Fixed-Reward/
 ├── Module/                      # 小鸟、地面、管道、记分板、LCD 数字、准备板
 ├── Images/  sounds/             # 图片与音效资源
 ├── flappy.qrc                   # Qt 资源清单
-└── README.md                    # 该组别的中英双语说明
+├── testee.txt                   # 行为数据输出（结束后追加）
+└── README.md                    # 该组别的说明
 ```
 
 ### 编译与运行
@@ -199,16 +159,16 @@ TOTALSCORE:12,  CJNUM:9
 | `TOTALSCORE` | 得分（管道计分，程序内为分数 / 2） |
 | `CJNUM` | 被试实际完成的**抽奖次数** |
 
-更多细节（包括尚未在代码中落地的"游戏时长""通过管道总数"记录点）见 [docs/DATA_FORMAT.md](docs/DATA_FORMAT.md)。
+字段含义、解析示例，以及"通过管道总数""游戏时长"等指标的扩展方式见 [docs/DATA_FORMAT.md](docs/DATA_FORMAT.md)。
 
 ### 每个程序内部改了什么
 
-四个目录**不是同一份代码复制四遍**，组间差异真实存在于源码与资源中：
+四个目录是四个真实的实验条件版本，组间差异存在于源码与资源中：
 
-- `E1-Fixed-Reward`：`Images/A1.png … A84.png` **84 个文件内容完全相同** → 抽奖结果恒定；
-- `E1-Random-Reward`：同样 84 个文件**内容各不相同** → 每次抽到不同样式；
-- `E2-*`：`choujiang.cpp` 的奖池额外包含 `S1/S3/S4.png` 三张金色边框稀有卡，并在抽中稀有卡时触发额外的评分与奖励提示逻辑；
-- `E2-Low-Value-Rare` / `E2-High-Value-Rare`：两者**仅** `shuoming.ui` 中的奖池说明文案不同（`0.5元现金` vs `三元现金`）。
+- `E1-Fixed-Reward`：`Images/A1.png … A84.png` 84 个文件内容完全相同 → 抽奖结果恒定；
+- `E1-Random-Reward`：同样 84 个文件内容各不相同 → 每次抽到不同样式；
+- `E2-*`：`choujiang.cpp` 的奖池额外包含 `S1/S3/S4.png` 三张金色边框稀有卡，并在抽中稀有卡时触发额外的评分与奖励逻辑；
+- `E2-Low-Value-Rare` 与 `E2-High-Value-Rare`：两者游戏与抽奖代码相同，区别在 `shuoming.ui` 中的稀有奖励金额（`0.5元现金` / `三元现金`）。
 
 完整清单见 [docs/MODIFICATIONS.md](docs/MODIFICATIONS.md)。
 
@@ -240,15 +200,6 @@ git remote add origin https://github.com/<你的账号>/lootbox-flappybird.git
 git push -u origin main
 ```
 
-**提交前检查清单 / Pre-publish checklist**
-
-- [ ] `CITATION.cff` 中的 `repository-code` 与作者联系方式已填写；
-- [ ] `docs/demo/` 下的 GIF 已替换为真实录屏（或确认暂时保留占位动图）；
-- [ ] `testee.txt` 中**没有**任何真实被试数据（含个人信息）；
-- [ ] 确认 `E1-Random-Reward` 中 3.5 秒防连点计时器被注释是有意为之（见 [docs/MODIFICATIONS.md](docs/MODIFICATIONS.md)）；
-- [ ] 确认论文可公开（涉及学位论文授权），再决定是否把论文 PDF 一并加入；
-- [ ] 若仓库需要包含编译好的 exe，请改用 [Git LFS](https://git-lfs.com/)，否则仓库会超过 200 MB。
-
 ---
 
 ## English
@@ -274,12 +225,9 @@ Thesis title: *Loot Box 游戏中游戏动机对游戏行为的影响* ("The Imp
 | [`E2-Low-Value-Rare`](E2-Low-Value-Rare/) | 实验二 · 稀有价值相对低组 (low-value rare) | 2 (N=62) | rare value **low** | pool = common bears + gold-bordered rare cards; each rare card pays **CNY 0.5** extra | low wanting |
 | [`E2-High-Value-Rare`](E2-High-Value-Rare/) | 实验二 · 稀有价值相对高组 (high-value rare) | 2 (N=62) | rare value **high** | same, but each rare card pays **CNY 3** extra | high wanting |
 
-> All four share the same Flappy Bird gameplay and questionnaire shell; they differ in the draw pool and in the instruction text. See [docs/EXPERIMENT_MAPPING.md](docs/EXPERIMENT_MAPPING.md) and [docs/MODIFICATIONS.md](docs/MODIFICATIONS.md).
+All four share the same Flappy Bird gameplay and questionnaire shell; they differ in the draw pool and in the instruction text. See [docs/EXPERIMENT_MAPPING.md](docs/EXPERIMENT_MAPPING.md) and [docs/MODIFICATIONS.md](docs/MODIFICATIONS.md).
 
 ### Demo recordings
-
-> 📹 **These four slots are reserved for GIF demos; the files currently in place are auto-generated placeholders.**
-> Record the real walkthroughs as described below and overwrite the files **with the same names** — no README edit needed.
 
 | Condition | Demo |
 |---|---|
@@ -287,40 +235,6 @@ Thesis title: *Loot Box 游戏中游戏动机对游戏行为的影响* ("The Imp
 | Study 1 · Random reward | <img src="docs/demo/E1-Random-Reward.gif" alt="Study 1 random-reward condition demo" width="440"> |
 | Study 2 · Low-value rare | <img src="docs/demo/E2-Low-Value-Rare.gif" alt="Study 2 low-value rare condition demo" width="440"> |
 | Study 2 · High-value rare | <img src="docs/demo/E2-High-Value-Rare.gif" alt="Study 2 high-value rare condition demo" width="440"> |
-
-**Suggested content of each clip (about 15–25 s per condition)**
-
-| # | Screen | Length |
-|---|---|---|
-| 1 | Start screen — entering a participant ID | 2 s |
-| 2 | Instruction page ("pass 3 pipes to earn one draw") | 3 s |
-| 3 | Flappy Bird gameplay — pass 3 pipes to earn one draw credit | 5 s |
-| 4 | Shop draw + opening animation — **draw 2–3 times to show this condition's defining feature** | 5–8 s |
-| 5 | The 1–7 "wanting" rating dialog | 2 s |
-| 6 | (optional) pool description page / the thank-you dialog on exit | 2 s |
-
-**What each condition must show**
-
-| Condition | Focus of the clip |
-|---|---|
-| Fixed reward | draw 3 times — **always the same bear** |
-| Random reward | draw 3 times — **a different bear every time** |
-| Low-value rare | pool page shows "可获得 **0.5元现金**"; try to capture a gold-bordered rare card |
-| High-value rare | same, but the text reads "可获得 **三元现金**" |
-
-**How to record and replace**
-
-| Step | Action |
-|---|---|
-| 1. Capture | OBS Studio (free, cross-platform), ShareX, or any screen recorder — record the **window** |
-| 2. Framing | Shop window is `1040×649`; the game window is locked at `380×500`; a capture area of at least `1040×649` is recommended |
-| 3. Convert | OBS can export GIF directly, or use ScreenToGif / FFmpeg:<br>`ffmpeg -i demo.mp4 -vf "fps=15,scale=760:-1:flags=lanczos,split[a][b];[a]palettegen[p];[b][p]paletteuse" demo.gif` |
-| 4. Size budget | aim for **3–8 MB per clip**: width 640–880 px, 12–15 fps, ≤ 25 s |
-| 5. Replace | overwrite the four files in `docs/demo/` keeping the **exact same file names** |
-| 6. Verify | `git status` should list only those four GIFs; after pushing, refresh the README and check playback |
-
-> If a clip is not ready yet, simply keep the placeholder — it clearly prints "REPLACE THIS FILE WITH YOUR RECORDING" so readers are not misled.
-> Use **fictional IDs and data** while recording; never show a real participant's name, ID or questionnaire responses.
 
 ### Repository layout
 
@@ -335,18 +249,14 @@ lootbox-flappybird/
 │   ├── MODIFICATIONS.md       # changes relative to the upstream FlappyBird project
 │   ├── REPO_DESCRIPTION.md    # About description / topics / release copy
 │   ├── zh/QUICKSTART.md       # experimenter quick start (Chinese)
-│   └── demo/                  # 📹 the four README demo GIFs (placeholders for now)
-│       ├── E1-Fixed-Reward.gif
-│       ├── E1-Random-Reward.gif
-│       ├── E2-Low-Value-Rare.gif
-│       └── E2-High-Value-Rare.gif
+│   └── demo/                  # the four demo GIFs used above
 ├── E1-Fixed-Reward/           # complete, self-contained Qt project
 ├── E1-Random-Reward/
 ├── E2-Low-Value-Rare/
 └── E2-High-Value-Rare/
 ```
 
-Each condition folder is an independent Qt project containing `FlappyBird.pro`, the game logic (`mainwindow.*`, `Module/`), the experiment shell (`formmenu.*`, `forminstruction.*`), the loot-box logic (`choujiang.*`), the pool description page (`shuoming.*`), the 1–7 rating dialog (`pingfen.*`), plus `Images/`, `sounds/` and `flappy.qrc`.
+Each condition folder is an independent Qt project containing `FlappyBird.pro`, the game logic (`mainwindow.*`, `Module/`), the experiment shell (`formmenu.*`, `forminstruction.*`), the loot-box logic (`choujiang.*`), the pool description page (`shuoming.*`), the 1–7 rating dialog (`pingfen.*`), plus `Images/`, `sounds/`, `flappy.qrc` and the `testee.txt` output file.
 
 ### Build and run
 
@@ -399,16 +309,16 @@ TOTALSCORE:12,  CJNUM:9
 | `TOTALSCORE` | score (pipe score; stored as score / 2) |
 | `CJNUM` | number of draws actually completed |
 
-See [docs/DATA_FORMAT.md](docs/DATA_FORMAT.md) for details, including the time-played / total-pipes measures that are computed but not yet written to disk.
+See [docs/DATA_FORMAT.md](docs/DATA_FORMAT.md) for field details, a parsing example, and how to extend the output with total pipes and play duration.
 
 ### What differs between the programs
 
-The four folders are **not** the same code copied four times — the condition manipulation lives in the sources and assets:
+The four folders are four real condition builds; the manipulation lives in the sources and assets:
 
-- `E1-Fixed-Reward`: `Images/A1.png … A84.png` are **84 byte-identical copies** → the drawn reward is effectively constant.
-- `E1-Random-Reward`: the same 84 files are **all distinct** → every draw differs.
-- `E2-*`: `choujiang.cpp` extends the pool with three gold-bordered rare cards (`S1/S3/S4.png`) and triggers the extra rating/reward logic when a rare card is drawn.
-- `E2-Low-Value-Rare` vs `E2-High-Value-Rare`: **only** the pool description text in `shuoming.ui` differs (`0.5元现金` vs `三元现金`).
+- `E1-Fixed-Reward`: `Images/A1.png … A84.png` are 84 byte-identical copies → the drawn reward is constant;
+- `E1-Random-Reward`: the same 84 files are all distinct → every draw differs;
+- `E2-*`: `choujiang.cpp` extends the pool with three gold-bordered rare cards (`S1/S3/S4.png`) and triggers the extra rating/reward logic when a rare card is drawn;
+- `E2-Low-Value-Rare` and `E2-High-Value-Rare`: identical game and draw code, differing only in the rare-reward amount in `shuoming.ui` (`0.5元现金` vs `三元现金`).
 
 Full list: [docs/MODIFICATIONS.md](docs/MODIFICATIONS.md).
 
@@ -439,15 +349,6 @@ git branch -M main
 git remote add origin https://github.com/<your-account>/lootbox-flappybird.git
 git push -u origin main
 ```
-
-**Pre-publish checklist**
-
-- [ ] Fill in `repository-code` and the author contact in `CITATION.cff`;
-- [ ] Replace the GIFs in `docs/demo/` with real recordings (or keep the placeholders deliberately);
-- [ ] Make sure `testee.txt` contains **no real participant data**;
-- [ ] Confirm that commenting out the 3.5 s draw-button debounce in `E1-Random-Reward` was intentional (see [docs/MODIFICATIONS.md](docs/MODIFICATIONS.md));
-- [ ] Check whether the thesis PDF may be published before adding it;
-- [ ] If you need to ship prebuilt executables, use [Git LFS](https://git-lfs.com/) — otherwise the repository grows past 200 MB.
 
 ---
 
