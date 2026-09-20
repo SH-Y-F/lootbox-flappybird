@@ -1,0 +1,1834 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>choujiang</class>
+ <widget class="QWidget" name="choujiang">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1040</width>
+    <height>649</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>商店</string>
+  </property>
+  <widget class="QPushButton" name="startCJ">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>580</y>
+     <width>131</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-size:contain;
+border-image: url(:/Images/BP0.png);
+</string>
+   </property>
+   <property name="text">
+    <string>抽奖</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="regame">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>590</y>
+     <width>121</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/Images/BP0.png);</string>
+   </property>
+   <property name="text">
+    <string>继续游戏</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb1">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb2">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>20</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>300</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb3">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>20</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb4">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>20</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb5">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>20</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb16">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>100</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb17">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>100</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb19">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>100</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb18">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>100</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb20">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>100</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb32">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>180</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb33">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>180</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb31">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>180</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb34">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>180</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb35">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>180</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb8">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>20</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb9">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>20</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb7">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>20</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb6">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>20</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb10">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>20</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb14">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>100</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb12">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>20</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb11">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>20</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb13">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>100</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb15">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>100</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb26">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>180</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb27">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>180</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb28">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>180</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb29">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>180</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb30">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>180</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb36">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>180</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb40">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>260</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb38">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>260</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb37">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>260</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb39">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>260</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb23">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>100</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb24">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>100</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb25">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>180</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb21">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>100</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb22">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>100</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb46">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>260</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb49">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>340</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb47">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>260</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb50">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>340</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb48">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>260</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb41">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>260</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb44">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>260</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb45">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>260</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb43">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>260</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb42">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>260</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Fcoin">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>610</y>
+     <width>211</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Fscore">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>690</y>
+     <width>191</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>590</y>
+     <width>101</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/Images/BP0.png);</string>
+   </property>
+   <property name="text">
+    <string>抽奖说明</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_CJnum">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>660</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QListView" name="listView">
+   <property name="geometry">
+    <rect>
+     <x>-30</x>
+     <y>-110</y>
+     <width>1121</width>
+     <height>981</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/Images/BK2.jpg);
+background-repeat: no-repeat;
+
+</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb51">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>340</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb52">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>340</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb53">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>340</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb54">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>340</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb62">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>420</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb71">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>420</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb72">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>420</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb61">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>420</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb60">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>340</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb59">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>340</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb57">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>340</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb58">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>340</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb55">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>340</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb82">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>500</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb81">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>500</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb83">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>500</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb75">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>500</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb84">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>500</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb73">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>500</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb76">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>500</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb56">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>340</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb79">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>500</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb77">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>500</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb80">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>500</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb74">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>500</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb69">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>420</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb78">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>500</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb67">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>420</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb65">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>420</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb68">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>420</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb66">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>420</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb70">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>420</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb64">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>420</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb63">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>420</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>81</width>
+     <height>81</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>600</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/Images/BK0.jpg);</string>
+   </property>
+   <property name="text">
+    <string>结束实验</string>
+   </property>
+  </widget>
+  <zorder>listView</zorder>
+  <zorder>startCJ</zorder>
+  <zorder>regame</zorder>
+  <zorder>pb1</zorder>
+  <zorder>pb2</zorder>
+  <zorder>pb3</zorder>
+  <zorder>pb4</zorder>
+  <zorder>pb5</zorder>
+  <zorder>pb16</zorder>
+  <zorder>pb17</zorder>
+  <zorder>pb19</zorder>
+  <zorder>pb18</zorder>
+  <zorder>pb20</zorder>
+  <zorder>pb32</zorder>
+  <zorder>pb33</zorder>
+  <zorder>pb31</zorder>
+  <zorder>pb34</zorder>
+  <zorder>pb35</zorder>
+  <zorder>pb8</zorder>
+  <zorder>pb9</zorder>
+  <zorder>pb7</zorder>
+  <zorder>pb6</zorder>
+  <zorder>pb10</zorder>
+  <zorder>pb14</zorder>
+  <zorder>pb12</zorder>
+  <zorder>pb11</zorder>
+  <zorder>pb13</zorder>
+  <zorder>pb15</zorder>
+  <zorder>pb26</zorder>
+  <zorder>pb27</zorder>
+  <zorder>pb28</zorder>
+  <zorder>pb29</zorder>
+  <zorder>pb30</zorder>
+  <zorder>pb36</zorder>
+  <zorder>pb40</zorder>
+  <zorder>pb38</zorder>
+  <zorder>pb37</zorder>
+  <zorder>pb39</zorder>
+  <zorder>pb23</zorder>
+  <zorder>pb24</zorder>
+  <zorder>pb25</zorder>
+  <zorder>pb21</zorder>
+  <zorder>pb22</zorder>
+  <zorder>pb46</zorder>
+  <zorder>pb49</zorder>
+  <zorder>pb47</zorder>
+  <zorder>pb50</zorder>
+  <zorder>pb48</zorder>
+  <zorder>pb41</zorder>
+  <zorder>pb44</zorder>
+  <zorder>pb45</zorder>
+  <zorder>pb43</zorder>
+  <zorder>pb42</zorder>
+  <zorder>label_Fcoin</zorder>
+  <zorder>label_Fscore</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>label_CJnum</zorder>
+  <zorder>pb51</zorder>
+  <zorder>pb52</zorder>
+  <zorder>pb53</zorder>
+  <zorder>pb54</zorder>
+  <zorder>pb62</zorder>
+  <zorder>pb71</zorder>
+  <zorder>pb72</zorder>
+  <zorder>pb61</zorder>
+  <zorder>pb60</zorder>
+  <zorder>pb59</zorder>
+  <zorder>pb57</zorder>
+  <zorder>pb58</zorder>
+  <zorder>pb55</zorder>
+  <zorder>pb82</zorder>
+  <zorder>pb81</zorder>
+  <zorder>pb83</zorder>
+  <zorder>pb75</zorder>
+  <zorder>pb84</zorder>
+  <zorder>pb73</zorder>
+  <zorder>pb76</zorder>
+  <zorder>pb56</zorder>
+  <zorder>pb79</zorder>
+  <zorder>pb77</zorder>
+  <zorder>pb80</zorder>
+  <zorder>pb74</zorder>
+  <zorder>pb69</zorder>
+  <zorder>pb78</zorder>
+  <zorder>pb67</zorder>
+  <zorder>pb65</zorder>
+  <zorder>pb68</zorder>
+  <zorder>pb66</zorder>
+  <zorder>pb70</zorder>
+  <zorder>pb64</zorder>
+  <zorder>pb63</zorder>
+  <zorder>pushButton_3</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
