@@ -16,21 +16,21 @@
   - [实验流程](#实验流程)
   - [四个实验条件](#四个实验条件)
   - [实验演示 Demo](#实验演示-demo)
-  - [实验设计局限与说明](#实验设计局限与说明)
   - [目录结构](#目录结构)
   - [编译与运行](#编译与运行)
   - [数据输出](#数据输出)
   - [每个程序内部改了什么](#每个程序内部改了什么)
+  - [反思与改进](#反思与改进)
   - [引用](#引用)
 - [English](#english)
   - [Overview](#overview)
   - [The four conditions](#the-four-conditions)
   - [Demo recordings](#demo-recordings)
-  - [Design limitations and notes](#design-limitations-and-notes)
   - [Repository layout](#repository-layout)
   - [Build and run](#build-and-run)
   - [Data output](#data-output)
   - [What differs between the programs](#what-differs-between-the-programs)
+  - [Reflections and future improvements](#reflections-and-future-improvements)
   - [Citation](#citation)
 - [License / 许可证](#license--许可证)
 
@@ -80,10 +80,6 @@
 | 实验一 · 奖励随机组 | <img src="docs/demo/E1-Random-Reward.gif" alt="实验一 · 奖励随机组 演示" width="440"> |
 | 实验二 · 稀有价值相对低组（0.5 元） | <img src="docs/demo/E2-Low-Value-Rare.gif" alt="实验二 · 稀有价值相对低组 演示" width="440"> |
 | 实验二 · 稀有价值相对高组（3 元） | <img src="docs/demo/E2-High-Value-Rare.gif" alt="实验二 · 稀有价值相对高组 演示" width="440"> |
-
-### 实验设计局限与说明
-
-> **【待补充 / 占位】** 本节内容待填写，请在此处补充实验设计的局限与说明。
 
 ### 目录结构
 
@@ -177,6 +173,10 @@ TOTALSCORE:12,  CJNUM:9
 
 完整清单见 [docs/MODIFICATIONS.md](docs/MODIFICATIONS.md)。
 
+### 反思与改进
+
+> **【待补充 / 占位】** 本节内容待填写，请在此处补充实验的反思与改进。
+
 ### 引用
 
 ```bibtex
@@ -240,10 +240,6 @@ All four share the same Flappy Bird gameplay and questionnaire shell; they diffe
 | Study 1 · Random reward | <img src="docs/demo/E1-Random-Reward.gif" alt="Study 1 random-reward condition demo" width="440"> |
 | Study 2 · Low-value rare | <img src="docs/demo/E2-Low-Value-Rare.gif" alt="Study 2 low-value rare condition demo" width="440"> |
 | Study 2 · High-value rare | <img src="docs/demo/E2-High-Value-Rare.gif" alt="Study 2 high-value rare condition demo" width="440"> |
-
-### Design limitations and notes
-
-> **【TO BE ADDED / PLACEHOLDER】** This section is reserved for the design limitations and notes.
 
 ### Repository layout
 
@@ -330,6 +326,10 @@ The four folders are four real condition builds; the manipulation lives in the s
 - `E2-Low-Value-Rare` and `E2-High-Value-Rare`: identical game and draw code, differing only in the rare-reward amount in `shuoming.ui` (`0.5元现金` vs `三元现金`).
 
 Full list: [docs/MODIFICATIONS.md](docs/MODIFICATIONS.md).
+
+### Reflections and future improvements
+
+> **【TO BE ADDED / PLACEHOLDER】** This section is reserved for reflections and future improvements.
 
 ### Citation
 
