@@ -51,10 +51,9 @@
 论文包含两个实验：**实验一**操纵"抽奖奖励是否随机"（好奇动机），**实验二**操纵"稀有奖励的价值高低"（想要动机）。四个程序分别对应这四个实验条件。
 
 ### 实验流程
-
-1. 主试按被试顺序分配编号，打开该编号对应的**那一个**实验程序；
+1. 主试按被试顺序分配编号，打开该编号对应的**相应**实验程序；
 2. 被试在开始界面输入编号；
-3. 阅读指导语（会提示"每通过 3 个管道可获得一次抽奖机会"）；
+3. 阅读指导语（告诉被试是为了测评一款游戏；会提示"每通过 3 个管道可获得一次抽奖机会"，且强调被试可以随时退出游戏，以测量其行为坚持度）；
 4. 游玩 Flappy Bird：小鸟每通过 1 个管道得 1 分，**累计通过 3 个管道 = 1 次抽奖机会**；
 5. 进入商店抽奖，抽取方式为**有放回抽取**，每次概率相同；
 6. 每次抽奖结果出现后随机弹出 1–7 点"想要"评分框；
@@ -173,9 +172,54 @@ TOTALSCORE:12,  CJNUM:9
 
 完整清单见 [docs/MODIFICATIONS.md](docs/MODIFICATIONS.md)。
 
+
 ### 反思与改进
 
-> **【待补充 / 占位】** 本节内容待填写，请在此处补充实验的反思与改进。
+> **Keywords**: `Loot Box` · `Random Reward` · `Problem Gambling` · `Loss Chasing` · `Incentive Salience` · `Wanting / Liking`
+
+---
+
+#### 1. 核心玩法与开箱机制的动机解耦 (Dissociating Core Gameplay vs. Loot Box Motivation)
+* **现存局限**：实验以动作敏捷任务（像素小鸟）作为获取开箱资格的门槛，导致“玩小鸟”既可能是获取抽奖的**工具性手段（Instrumental Means）**，也可能是被试追求的**内在目标（Intrinsic Goal）**。仅以宏观总时长和总抽卡数作为指标，无法完全剥离是玩法本身的心流还是开箱的不确定性主导了行为粘性。
+* **机制意义**：若无法解耦核心玩法与开箱机制，便难以估计 Loot Box 随机奖励机制对行为粘性的独立贡献，也难以判断其与问题性赌博共享的强化机制。
+* **改进方案**：
+  * **试次级（Trial-level）微观行为采集**：精确记录每轮次通关耗时、失误重试潜伏期（Latency）、抽卡界面停留时长、抽卡后继续下一轮的延迟及退出前总轮次。
+  * **变量属性的统计区分**：将单次耗时与抽卡停留时间作为**过程变量或中介变量**；将基线游戏表现、冲动性、感觉寻求（Sensation Seeking）、FOMO、收藏倾向等实验前测稳定特质作为**协变量（Covariates）**。
+  * **混合效应模型与净效应估计**：采用**广义线性混合模型（GLMM）**拟合试次级的重复测量数据（如继续决策与抽取频次），在控制个体基线差异与核心玩法干扰的前提下，精准量化开箱机制对行为粘性的独立贡献。
+
+---
+
+#### 2. 奖励刺激的生态效度与实验控制的权衡 (Ecological Validity vs. Experimental Control)
+* **现存局限**：为严格控制物理低级属性，实验采用了简笔画作为奖励刺激。虽然保证了内部效度，但生态效度较低，可能低估了真实游戏中稀有资产所激发的渴望（Craving）与唤醒水平。
+* **机制意义**：商业游戏中的稀有战利品深度绑定了身份认同、社交炫耀、审美偏好以及二手市场经济价值，这些是诱发“想要动机（Wanting）”的关键驱动力。
+* **改进方案**：
+  * **拟真资产与预实验评定**：采用高质量拟真虚拟资产（如使用 Blender/Unity 自制，避免直接使用商业版权素材），并在正式实验前对刺激物进行标准化评定，涵盖主观价值、稀有度、欲望度、审美偏好与唤醒度。
+  * **操作有效性检验**：在预实验中严格检验高/低价值操纵的组间主观差异显著性，防范正式实验中出现操纵失效。
+  * **外生变量平衡**：通过前测筛选、匹配设计与后测协变量控制，剥离被试先前游戏经验、市场价值认知与审美偏好带来的外生干扰。
+  * **分离稀有性与现实价值**：增设“无现实经济价值的稀有卡条件”，探究纯粹的“概率稀缺性”与“外在现实价值”对决策行为的独立与交互影响。
+
+---
+
+#### 3. 博彩机制维度的拓展：从纯收益框架到损益与微交易模拟 (Expanding into Gambling Mechanisms)
+* **现存局限**：当前实验基于被试费加成的“纯收益框架”，缺乏初始代币消耗、抽卡成本与本金损失风险，尚未完全触及赌博障碍的核心心理机制。
+* **机制意义**：真实的赌博与 Loot Box 消费往往涉及微交易（Micro-transactions）、沉没成本效应（Sunk Cost Effect）与损失追逐（Loss Chasing）。若只研究“收益—抽卡”，便难以与赌博障碍的强化机制形成直接对话。
+* **改进方案**：
+  * **损益框架与损失追逐**：引入初始代币消耗与负反馈机制，系统考察个体在经历代币净损失后的冲动加注与滞留行为。
+  * **随机强化与近失效应（Near-miss Effect）**：操纵“差一点抽到顶级稀有卡”的界面反馈，检验近失事件对下一次开箱潜伏期与动机强度的即时促进效应。
+  * **机制透明度与保底系统（Pity Mechanics）**：对比公开概率 vs. 隐藏概率、硬保底 vs. 无保底条件下的决策差异与控制幻觉（Illusion of Control）；严格匹配每抽成本与期望收益，避免概率结构变化混淆结果。
+  * **微交易模拟与伦理边界**：实验全流程采用虚拟代币模拟，杜绝真实金钱赌博；严格遵循 IRB 伦理规范，设置充分的知情同意、成瘾风险提示与随时无条件退出机制，避免诱导现实问题赌博倾向。
+
+---
+
+#### 4. 多模态生理与神经指标的融合 (Cognitive Neuroscience Approach)
+* **现存局限**：当前研究完全依赖行为数据与自陈量表，难以揭示奖赏预测误差（RPE）的毫秒级演变，且无法直接分离动机诱发中的神经生物学动态。
+* **改进方案**：
+  * **眼动追踪（Eye-Tracking）**：量化被试对开箱动画、稀有卡视觉线索及概率声明的注视偏向与瞳孔放大效应（认知唤醒）；实验中严格校准光照条件与瞳孔基线。
+  * **皮电活动（EDA）**：记录开箱前期待期（Anticipation）与结果揭晓期的交感神经激活程度；严控动作伪迹与个体基线电导差异。
+  * **脑电 ERP 探索**：聚焦反映奖赏预测误差与结果评价的负向/正向电位成分（FRN / RewP），以及表征注意分配与动机显著性（Incentive Salience）的 P300 成分；保证硬件级时间同步标记与伪迹剔除。
+  * **多模态整合**：将行为数据、眼动轨迹、EDA、ERP 与主观量表深度拟合，形成闭环交叉验证链。
+
+---
 
 ### 引用
 
@@ -282,7 +326,7 @@ make            # use mingw32-make on Windows + MinGW
 
 1. The experimenter assigns each participant an ID and launches the matching program.
 2. The participant enters their ID on the start screen.
-3. Instructions are shown (including "pass 3 pipes to earn one draw").
+3. Instructions are shown (The instructions state that the task is to evaluate a game, mention that “pass 3 pipes to earn one draw” and emphasize that the participant may quit the game at any time in order to measure their behavioral persistence.).
 4. Flappy Bird: 1 point per pipe passed; **every 3 pipes = 1 draw credit**.
 5. Draw in the shop — sampling is **with replacement**, every draw has the same probability.
 6. After each draw a 1–7 "wanting" rating dialog appears.
@@ -317,7 +361,50 @@ Full list: [docs/MODIFICATIONS.md](docs/MODIFICATIONS.md).
 
 ### Reflections and future improvements
 
-> **【TO BE ADDED / PLACEHOLDER】** This section is reserved for reflections and future improvements.
+> **Keywords**: `Loot Box` · `Random Reward Mechanisms` · `Problem Gambling` · `Loss Chasing` · `Incentive Salience` · `Wanting vs. Liking`
+
+---
+
+#### 1. Dissociating Core Gameplay vs. Loot-Box Motivation
+* **Current Limitations**: The current design used a simple action-agility task (*Flappy Bird*-like) as the access threshold to earn loot-box draws. Consequently, engaging in the core gameplay could serve either as an **instrumental means** to acquire reward draws or as an **intrinsic goal** pursued for its own sake. Relying exclusively on macro-level behavioral metrics (total playtime and total draw count) makes it difficult to disentangle whether behavioral persistence was primarily driven by the flow state induced by core gameplay or by the curiosity and wanting elicited by reward uncertainty.
+* **Mechanistic Significance**: Without decoupling core gameplay motivation from loot-box engagement, it is challenging to quantify the independent contribution of random reward schedules to behavioral persistence, or to evaluate the reinforcement mechanisms it shares with problem gambling.
+* **Proposed Improvements**:
+  * **Trial-Level Micro-Behavioral Tracking**: Systematically log per-trial completion latency, post-error retry latency, loot-box interface dwell time, latency to initiate subsequent trials post-draw, and total completed rounds prior to voluntary session termination.
+  * **Assigning Statistical Roles to Variables**: Treat per-trial completion time and interface dwell time as **process or mediating variables**; incorporate stable pre-test traits—such as baseline motor performance, trait impulsivity, sensation seeking, Fear of Missing Out (FOMO), and collection tendencies—as **covariates**.
+  * **Mixed-Effects Modeling & Net Effect Estimation**: Fit **Generalized Linear Mixed Models (GLMMs)** to trial-level repeated-measures data (e.g., binary continuation decisions and draw counts) to statistically isolate the net contribution of loot-box mechanics to behavioral persistence after controlling for core gameplay performance and individual baseline differences.
+
+---
+
+#### 2. Ecological Validity vs. Experimental Control of Reward Stimuli
+* **Current Limitations**: To maintain strict experimental control over low-level visual and physical properties, simplistic line drawings were used as reward stimuli. While this ensured high internal validity, the low ecological validity may have attenuated subjective craving, arousal, and incentive salience compared to rewards encountered in commercial gaming environments.
+* **Mechanistic Significance**: In commercial games, rare loot is deeply intertwined with social status, identity display, aesthetic value, and secondary-market economic value—key drivers that elicit strong "wanting" motivation.
+* **Proposed Improvements**:
+  * **High-Fidelity Virtual Assets & Pilot Validation**: Develop bespoke, high-fidelity 2D/3D virtual assets (e.g., via Blender/Unity to avoid copyright constraints), accompanied by standardized pre-experimental pilot ratings assessing subjective value, perceived rarity, desirability, aesthetic preference, and emotional arousal.
+  * **Manipulation Checks**: Conduct rigorous statistical checks during pilot phases to verify significant subjective separation between high- and low-value reward tiers, preventing manipulation failure in the primary experiment.
+  * **Balancing Extraneous Variables**: Control for confounding influences stemming from prior gaming background, perceived market value, and subjective aesthetic preferences using pre-screening, matched-group designs, and post-test covariate adjustments.
+  * **Isolating Probabilistic Rarity from Extrinsic Value**: Introduce a "zero-real-world-value rare reward" condition to experimentally dissociate the independent and interactive effects of pure probabilistic rarity versus external economic value on decision-making.
+
+---
+
+#### 3. Expanding into Gambling Mechanisms: From Gain Frames to Loss and Micro-Transaction Simulations
+* **Current Limitations**: The current paradigm relies strictly on an additive "pure-gain framework" (performance-contingent bonus compensation), lacking initial token endowments, per-draw costs, and downside financial risks. As such, it does not fully model the core behavioral dynamics of gambling disorder.
+* **Mechanistic Significance**: Real-world loot-box engagement and problem gambling center on micro-transactions, sunk cost effects, and loss chasing. Investigating loot boxes solely under a reward-gain paradigm limits direct dialogue with clinical models of gambling reinforcement.
+* **Proposed Improvements**:
+  * **Gain-Loss Framing & Loss Chasing**: Introduce initial token endowments and negative financial/token feedback loops to systematically examine post-loss escalation, impulsive replenishment, and persistence.
+  * **Random Reinforcement & Near-Miss Effects**: Manipulate visual outcome feedback to simulate "near-miss" events (e.g., stopping adjacent to top-tier rare items) to test their immediate facilitating effects on motivation and subsequent draw latency.
+  * **Odds Transparency & Pity Mechanics**: Contrast decision-making and illusions of control under disclosed versus hidden odds, as well as guaranteed-drop ("pity") versus no-pity schedules, while strictly calibrating unit costs and expected values across conditions.
+  * **Simulated Micro-Transactions & Ethical Boundaries**: Use experimental tokens exclusively, completely avoiding real-money gambling. Adhere strictly to institutional review board (IRB) ethical guidelines by implementing comprehensive informed consent, problem-gambling risk disclosures, and unrestricted voluntary withdrawal mechanisms.
+
+---
+
+#### 4. Multimodal Physiological and Neural Integration (Cognitive Neuroscience Approach)
+* **Current Limitations**: The present study relies entirely on macro-behavioral outputs and retrospective self-reports, obscuring the millisecond-level temporal dynamics of reward prediction errors (RPE) and precluding the neurobiological dissociation of motivational wanting from hedonic liking.
+* **Proposed Improvements**:
+  * **Eye-Tracking**: Quantify attentional bias, fixation durations, and pupillary dilation (indexing cognitive/autonomic arousal) toward unboxing animations, rare reward cues, and odds disclosures, while rigorously controlling for luminance and baseline pupil diameter.
+  * **Electrodermal Activity (EDA)**: Measure sympathetic nervous system arousal during both the anticipation and outcome-revelation phases, implementing strict controls for movement artifacts and individual baseline conductance differences.
+  * **Event-Related Potentials (ERP)**: Target electrophysiological markers, including the Feedback-Related Negativity / Reward Positivity (FRN / RewP) reflecting reward prediction errors and outcome appraisal, and the P300 component indexing attentional resource allocation and incentive salience, supported by hardware-synchronized event tagging.
+  * **Multimodal Convergence**: Integrate trial-level behavioral dynamics, gaze metrics, autonomic signals, ERP components, and psychometric scales into a coherent, cross-validating empirical framework.
+  * *Note*: Electrophysiological indices should be conservatively framed as exploratory neural correlates rather than definitive biomarkers of wanting/liking dissociation.
 
 ### Citation
 
