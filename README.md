@@ -13,11 +13,12 @@
 
 - [简体中文](#简体中文)
   - [项目简介](#项目简介)
+  - [实验流程](#实验流程)
   - [四个实验条件](#四个实验条件)
   - [实验演示 Demo](#实验演示-demo)
+  - [实验设计局限与说明](#实验设计局限与说明)
   - [目录结构](#目录结构)
   - [编译与运行](#编译与运行)
-  - [实验流程](#实验流程)
   - [数据输出](#数据输出)
   - [每个程序内部改了什么](#每个程序内部改了什么)
   - [引用](#引用)
@@ -25,9 +26,9 @@
   - [Overview](#overview)
   - [The four conditions](#the-four-conditions)
   - [Demo recordings](#demo-recordings)
+  - [Design limitations and notes](#design-limitations-and-notes)
   - [Repository layout](#repository-layout)
   - [Build and run](#build-and-run)
-  - [Experimental procedure](#experimental-procedure)
   - [Data output](#data-output)
   - [What differs between the programs](#what-differs-between-the-programs)
   - [Citation](#citation)
@@ -49,6 +50,17 @@
 论文题目：《Loot Box 游戏中游戏动机对游戏行为的影响》（作者：史晏榕，西南大学心理学部）。
 论文包含两个实验：**实验一**操纵"抽奖奖励是否随机"（好奇动机），**实验二**操纵"稀有奖励的价值高低"（想要动机）。四个程序分别对应这四个实验条件。
 
+### 实验流程
+
+1. 主试按被试顺序分配编号，打开该编号对应的**那一个**实验程序；
+2. 被试在开始界面输入编号；
+3. 阅读指导语（会提示"每通过 3 个管道可获得一次抽奖机会"）；
+4. 游玩 Flappy Bird：小鸟每通过 1 个管道得 1 分，**累计通过 3 个管道 = 1 次抽奖机会**；
+5. 进入商店抽奖，抽取方式为**有放回抽取**，每次概率相同；
+6. 每次抽奖结果出现后随机弹出 1–7 点"想要"评分框；
+7. 被试可自行决定继续游戏或结束实验；
+8. 结束后程序把行为数据写入 `testee.txt`，并弹出致谢提示。
+
 ### 四个实验条件
 
 | 目录 | 中文组名 | 实验 | 自变量水平 | 抽取机制 | 备注 |
@@ -68,6 +80,10 @@
 | 实验一 · 奖励随机组 | <img src="docs/demo/E1-Random-Reward.gif" alt="实验一 · 奖励随机组 演示" width="440"> |
 | 实验二 · 稀有价值相对低组（0.5 元） | <img src="docs/demo/E2-Low-Value-Rare.gif" alt="实验二 · 稀有价值相对低组 演示" width="440"> |
 | 实验二 · 稀有价值相对高组（3 元） | <img src="docs/demo/E2-High-Value-Rare.gif" alt="实验二 · 稀有价值相对高组 演示" width="440"> |
+
+### 实验设计局限与说明
+
+> **【待补充 / 占位】** 本节内容待填写，请在此处补充实验设计的局限与说明。
 
 ### 目录结构
 
@@ -134,17 +150,6 @@ make            # Windows + MinGW 用 mingw32-make
 
 > **Windows 下想让 exe 带图标**：把 `FlappyBird.pro` 中的 `# RC_ICONS = bird.ico` 一行取消注释后重新构建。
 > 运行时若提示缺少 `Qt5Core.dll` 等，请把 `Qt/5.15.x/mingw81_32/bin` 加入 `PATH`，或使用 `windeployqt FlappyBird.exe`。
-
-### 实验流程
-
-1. 主试按被试顺序分配编号，打开该编号对应的**那一个**实验程序；
-2. 被试在开始界面输入编号；
-3. 阅读指导语（会提示"每通过 3 个管道可获得一次抽奖机会"）；
-4. 游玩 Flappy Bird：小鸟每通过 1 个管道得 1 分，**累计通过 3 个管道 = 1 次抽奖机会**；
-5. 进入商店抽奖，抽取方式为**有放回抽取**，每次概率相同；
-6. 每次抽奖结果出现后随机弹出 1–7 点"想要"评分框；
-7. 被试可自行决定继续游戏或结束实验；
-8. 结束后程序把行为数据写入 `testee.txt`，并弹出致谢提示。
 
 ### 数据输出
 
@@ -235,6 +240,10 @@ All four share the same Flappy Bird gameplay and questionnaire shell; they diffe
 | Study 1 · Random reward | <img src="docs/demo/E1-Random-Reward.gif" alt="Study 1 random-reward condition demo" width="440"> |
 | Study 2 · Low-value rare | <img src="docs/demo/E2-Low-Value-Rare.gif" alt="Study 2 low-value rare condition demo" width="440"> |
 | Study 2 · High-value rare | <img src="docs/demo/E2-High-Value-Rare.gif" alt="Study 2 high-value rare condition demo" width="440"> |
+
+### Design limitations and notes
+
+> **【TO BE ADDED / PLACEHOLDER】** This section is reserved for the design limitations and notes.
 
 ### Repository layout
 
