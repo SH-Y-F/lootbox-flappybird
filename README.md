@@ -355,7 +355,7 @@ The four folders are four real condition builds; the manipulation lives in the s
 - `E1-Fixed-Reward`: `Images/A1.png … A84.png` are 84 byte-identical copies → the drawn reward is constant;
 - `E1-Random-Reward`: the same 84 files are all distinct → every draw differs;
 - `E2-*`: `choujiang.cpp` extends the pool with three gold-bordered rare cards (`S1/S3/S4.png`) and triggers the extra rating/reward logic when a rare card is drawn;
-- `E2-Low-Value-Rare` and `E2-High-Value-Rare`: identical game and draw code, differing only in the rare-reward amount in `shuoming.ui` (`0.5元现金` vs `三元现金`).
+- `E2-Low-Value-Rare` and `E2-High-Value-Rare`: identical game and draw code, differing only in the rare-reward amount in `shuoming.ui` (`0.5元现金` vs `3元现金`).
 
 Full list: [docs/MODIFICATIONS.md](docs/MODIFICATIONS.md).
 
