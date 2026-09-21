@@ -191,19 +191,7 @@ TOTALSCORE:12,  CJNUM:9
 
 若本仓库对你的研究有帮助，欢迎引用；也请同时引用本仓库（见 [CITATION.cff](CITATION.cff)）。
 
-### 推送到 GitHub
 
-```bash
-# 在本仓库根目录（lootbox-flappybird/）执行
-git init
-git add .
-git commit -m "Initial commit: four Qt loot-box experiment programs"
-
-# 先在 GitHub 网页端新建空仓库（不要勾选自动生成 README）
-git branch -M main
-git remote add origin https://github.com/<你的账号>/lootbox-flappybird.git
-git push -u origin main
-```
 
 ---
 
@@ -345,19 +333,7 @@ Full list: [docs/MODIFICATIONS.md](docs/MODIFICATIONS.md).
 
 If this repository helps your research, please cite the thesis above and this repository (see [CITATION.cff](CITATION.cff)).
 
-### Publishing to GitHub
 
-```bash
-# run inside the repository root (lootbox-flappybird/)
-git init
-git add .
-git commit -m "Initial commit: four Qt loot-box experiment programs"
-
-# create an EMPTY repository on GitHub first (do not let it generate a README)
-git branch -M main
-git remote add origin https://github.com/<your-account>/lootbox-flappybird.git
-git push -u origin main
-```
 
 ---
 
